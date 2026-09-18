@@ -1,26 +1,38 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Catalogo De Peliculas</title>
+        <title>Calculadora</title>
         <link rel="stylesheet" href="misEstilos.css">
-        <script src="miScript.js"></script>
+        <script src="calculadora.js"></script>
     </head>
     <body>
-        <h1>Bienvenido al cine &#127909; !</h1>
-        <h4>--Catalogo</h4>
-        <p>Queremos hacer de tu visita, una experiencia mas placentera.
-            Para eso ingresa tu edad y selecciona el genero que mas te guste
-            ,y te recomendamos la pelicula ideal.
-        </p>
-        <p>Edad:<input type="number" min="1" id="ingresarEdad"></p>
+        <h1>CALCULADORA</h1>
+        <input type="text" id="campo1">
+        <input type="text" id="campo2"><br><br>
+         
+        <div class="fila1">
+            <button onclick="sumar()" >+</button>
+            <button onclick="restar()">-</button>
+            <button onclick="multiplicar()">x</button>
+            <button onclick="dividir()">/</button>
+        </div><br>
+        
+        <div class="fila2">
+            <button onclick="raiz()">raiz</button>
+            <button onclick="potencia()">potencia</button>
+        <br>
+            <button onclick="valorAbsoluto()">absoluto</button>
+            <button onclick="numeroAleatorio()">random</button>
+        </div><br>
+        
+        <h3>Resultado:</h3>
+        <input type="text" id="campo3">
         <br><br>
-        <div>
-            <button onclick="recomendar('comedia')">Comedia</button>
-            <button onclick="recomendar('drama')">Drama</button>
-            <button onclick="recomendar('musical')">Musical</button>
-            <button onclick="recomendar('crimen')">Crimen</button>
+        
+        <div class="fila3">
+            <button onclick="redondeo()">round</button>
+            <button onclick="redondeoAbajo()">floor</button>
+            <button onclick="redondeoArriba()">ceil</button>
         </div>
-        <h2>Tu pelicula ideal es :</h2>
-        <h3 id="mostrarPelicula"></h3>
     </body>
 </html>
